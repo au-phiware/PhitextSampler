@@ -1,0 +1,115 @@
+This is some sample text to demonstrate Phitext.
+
+The Phitext editor library offers the following features:
+
+ ¥ Undo Support
+ ¥ Support for Autocorrection
+ ¥ Fast and effective rendering using Core Text
+ ¥ Rich text features backed by NSAttributedString, supported with PhiTextStyle
+ ¥ Optimised for UIScrollView
+ ¥ Synchronisation
+ ¥ Replication of magnifier and text selection
+ ¥ And more
+ 
+FUTURE UPDATES will include:
+
+ ¥ Reading and writing RTF files
+ ¥ Better Documentation.
+ ¥ Pagination and/or linked editors.
+ ¥ Decoupling of PhiTextDocument and PhiTextEditorView.
+ ¥ Marked text support.
+ 
+KNOWN ISSUES
+
+ ¥ The setUnderlined (PhiTextStyle) will set the underline, but never remove it.
+ ¥ Line number of last empty line is sometimes incorrect.
+ ¥ Frames near end of document are sometimes drawn twice (text appears bolder/aliased).
+ 
+CHANGES
+
+ ¥ [Fix] Taping at end of line (also at end of document) places caret at the end of line (i.e. after the space).
+ ¥ [Fix] Magnifier now creates and manages it's own window (with statusbar level), it now correctly responds to orientation changes.
+ ¥ [Fix] Cut and Copy was shown when nothing selected.
+ ¥ [Fix] New text frame that overlap the last empty line is now drawn entirely/correctly.
+ ¥ [Change] Magnifier now disappears in response to orientation changes instead of being drawn sideways.
+ ¥ [Add] Determine editor's contentSize in background to display correct scrollbar height/position.
+ ¥ [Add] addTextStyleForSelectedRange method added to PhiTextEditorView.h.
+ ¥ [Fix] PhiTextEditorView (and it's subview) display correctly when non-opaque.
+ ¥ [Add] Line number property added to PhiTextLine.
+(As of 30 September 2010)
+ ¥ [Fix] Last line of the document is now correctly displayed when a line break is introduced.
+ ¥ [Fix] Correct display cof caret rects when style changes.
+(As of 25 September 2010)
+ ¥ [Change] PhiTextEditorView is opaque by default.
+ ¥ [Fix] buildPath:forRange: now returns zero width path for empty ranges.
+ ¥ [Fix] Display of new line at end of document.
+ ¥ [Fix] Caret rect when style changes.
+ ¥ [Add] Undo support.
+ ¥ [Add] Custom menu item support.
+ ¥ [Add] New class, PhiTextStyle, encapsulates CoreText attributes. New PhiTextEditorView methods, textStyleForSelectedRange, setTextStyleForSelectedRange, addTextStyleForSelectedRange and PhiTextDocument now has defaultStyle property and more.
+ ¥ [Add] New class, PhiTextLine, provides access to line data for a frame. Also, PhiTextPosition may be associated with a line.
+ ¥ [Add] selectionAffinity implemented.
+ ¥ [Fix] Missing text frames are now rendered.
+ ¥ [Fix] Text tokenizer and keyboard selection (ie Cmd+arrow) has line awareness.
+ ¥ [Add] PhiTextColorWheelController, a CYMK colour picker.
+ ¥ [Add] Table controllers and cells for PhiTextStyle.
+ ¥ [Fix] Correct redisplay when switching line wrapping.
+ ¥ [Improve] Menu controller not shown when decelerating scroll (it flickers).
+(As of 12 June 2010)
+ ¥ [Fix] Memory leak regarding magnifier.
+ ¥ [Change] Default CALayer actions removed from Core Text layer.
+ ¥ [Fix] Menu controller persistence when interacting outside of PhiTextEditorView.
+ ¥ [Fix] Editor width with no wrapping.
+ ¥ [Fix] Auto scroll with magnifier now fires scrollViewDidScroll on delegate.
+ ¥ [Change] Magnifier now magnifies editor view only not the entire window.
+ ¥ [Fix] Infinite recursion while increasing editor's width with no wrapping.
+ 
+(As of 5 June 2010)
+ ¥ [Change] [PhiTextEditorView scrollRectToSelection] renamed to [PhiTextEditorView scrollSelectionToVisible]
+ ¥ [Improve] Performance increase thanks to CALayer!
+ ¥ [New] Over 50 user defaults added to customise the appearance and behaviour of Phitext
+ ¥ [New] Magnifier now escapes from under your finger near top of screen
+ ¥ [Improve] Magnifier is now pixel perfect!
+ ¥ [Fix] Autocorrection prompt now responds to dismals
+ ¥ [Improve] Automatic expansion of content height
+ ¥ [Refine] Selected text range now updates when autoscrolling.
+ ¥ [Fixe] Width of selection path
+ ¥ [Refine] AutoScroll is too fast.
+ ¥ [Fix] Lined background now resizes correctly.
+ ¥ [Refine] Menu controller hides during scrolling
+ ¥ [Fix] Numerous problems with end of document (eod)
+  - Improved Select All (correctness and speed).
+  - Autoscrolling now works when typing at eod for big doc.
+  - Cursor now shows on last empty line (when starting from blank document).
+  - Arrow keys now work at eod
+  - Tapping below text works now
+
+(As of 17 May 2010)
+ ¥ Fixed issues when rotating.
+ ¥ Fixed some device only bugs.
+ ¥ Fixed delete all crash.
+ ¥ Fixed some issues with the display of new lines while deleting/inserting.
+ ¥ Fixed some issues with the caret at wrong position for new lines.
+ ¥ Fixed available menu items on empty document.
+ ¥ Fixed crash while no wrapping.
+ ¥ Added horizontal UIView tiles.
+ ¥ PhiTextStore now calls the (selecttion|text)(Will|Did)Change methods, the mutator methods of UITextInput protocol don't call inputDelegate methods.
+ ¥ More sync'ing.
+ ¥ Tap near selection handle recognised as a drag issue fixed.
+ ¥ Selection highlighting is now done in UITextSelectionView (not UITextView). This requires that UITextSelectionView behaves like a huge tile.
+ ¥ Selection snap to word is now animated.
+ ¥ Caret now has an extended hit space to show menu controller.
+ ¥ Sticky magnifier fixed.
+ ¥ Unrecycled TextView fix.
+ ¥ [PhiTextDocument setStore] now invalidates the document.
+ ¥ Fixed autoscroll issues, note that changeSelectedRange no longer scrolls, it is the application's responsibility.
+ ¥ Fixed two blinking carets.
+ ¥ Fixed delete backwards on a big block near end of document issue.
+ ¥ Magnifier and selection handles are now drawn with Core Graphics.
+ ¥ Menu controller erroneously hiding fix.
+ ¥ Menu controller is now shown with large selections.
+ ¥ Menu controller is now shown correctly after snap to word animation.
+ ¥ Menu controller position and arrow direction is automatically adjusted (enableMenuPositionAdjustment property).
+ ¥ Workaround for caret display is incorrect at end of string when the last character is a new line.
+ ¥ Entering a new line at the end of a frame tile now validates the next frame properly.
+ ¥ Tap end of word, tap again to show menu controller, double tap to select word now shows menu controller.
