@@ -17,16 +17,26 @@ FUTURE UPDATES will include:
  ¥ Better Documentation.
  ¥ Pagination and/or linked editors.
  ¥ Decoupling of PhiTextDocument and PhiTextEditorView.
- ¥ Marked text support.
  
 KNOWN ISSUES
 
  ¥ The setUnderlined (PhiTextStyle) will set the underline, but never remove it.
  ¥ Line number of last empty line is sometimes incorrect.
- ¥ Frames near end of document are sometimes drawn twice (text appears bolder/aliased).
  
 CHANGES
 
+ ¥ [New] Marked text support.
+ ¥ [Change] Thinner caret.
+ ¥ [Change] Pixel aligned selection highlighting.
+ ¥ [New] More options and flexibility for PhiTextSelectionView.
+ ¥ [New] New protocol PhiTextSelectionViewDelegate.
+ ¥ [Fix] Fixed occasional infinite recursion on initialisation.
+ ¥ [Fix] Display problem fixed (the last one!)
+ ¥ [Fix] changeSelectedText now accepts nil parameter.
+ ¥ [Remove] Deprecated didShow/HideSelectionHandles
+ ¥ [Fix] Fixed crash when undoManager shouldIgnoreUndoAnyGroupings:PhiTextUndoManagerStylingGroupingType.
+
+(As of 26 October 2010)
  ¥ [Fix] Taping at end of line (also at end of document) places caret at the end of line (i.e. after the space).
  ¥ [Fix] Magnifier now creates and manages it's own window (with statusbar level), it now correctly responds to orientation changes.
  ¥ [Fix] Cut and Copy was shown when nothing selected.
