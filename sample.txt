@@ -35,6 +35,9 @@ CHANGES
  ¥ [Fix] changeSelectedText now accepts nil parameter.
  ¥ [Remove] Deprecated didShow/HideSelectionHandles
  ¥ [Fix] Fixed crash when undoManager shouldIgnoreUndoAnyGroupings:PhiTextUndoManagerStylingGroupingType.
+ ¥ [Fix] Some synchonization issues with text frames tree and selection view.
+ ¥ [Fix] Redisplay of frame at end of document after many frames are deleted crash.
+ ¥ [Fix] Crash when undo of formatting changes.
 
 (As of 26 October 2010)
  ¥ [Fix] Taping at end of line (also at end of document) places caret at the end of line (i.e. after the space).
