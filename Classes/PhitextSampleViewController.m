@@ -7,7 +7,9 @@
 
 #define PHI 1.61803398874989484820458683436563812
 
+#ifndef SAMPLE_FILE
 #define SAMPLE_FILE @"sample"
+#endif
 
 #import "PhitextSampleViewController.h"
 

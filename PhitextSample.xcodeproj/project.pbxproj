@@ -10,15 +10,18 @@
 		1D3623260D0F684500981E51 /* PhitextSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* PhitextSampleAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
-		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		2899E5220DE3E06400AC0155 /* PhitextSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* PhitextSampleViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* PhitextSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* PhitextSampleViewController.m */; };
 		5312C69611C9D2E1003A0BA1 /* sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5312C69511C9D2E1003A0BA1 /* sample.txt */; };
+		531A0CF41335F49300D0C8E8 /* Debug-Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 531A0CF11335F49300D0C8E8 /* Debug-Icon-72.png */; };
+		531A0CF51335F49300D0C8E8 /* Debug-Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 531A0CF21335F49300D0C8E8 /* Debug-Icon@2x.png */; };
+		531A0CFC1335F65100D0C8E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531A0CFB1335F65100D0C8E8 /* CoreGraphics.framework */; };
+		531A0CFE1335F65C00D0C8E8 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531A0CFD1335F65C00D0C8E8 /* CoreText.framework */; };
+		531A0D001335F67A00D0C8E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531A0CFF1335F67A00D0C8E8 /* UIKit.framework */; };
 		532D9D2A119D0199008A429C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 532D9D29119D0199008A429C /* QuartzCore.framework */; };
 		532D9D41119D01B3008A429C /* Phitext.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 532D9D40119D01B3008A429C /* Phitext.framework */; };
-		534B20F2113B52E600412F0F /* sqlite3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 534B20F1113B52E600412F0F /* sqlite3.txt */; };
+		534B20F2113B52E600412F0F /* large.txt in Resources */ = {isa = PBXBuildFile; fileRef = 534B20F1113B52E600412F0F /* large.txt */; };
 		535B11EA124D9E130077298A /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 535B11E9124D9E130077298A /* Settings.bundle */; };
 		535B11F9124D9E860077298A /* PhiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 535B11EE124D9E860077298A /* PhiTableViewController.m */; };
 		535B11FA124D9E860077298A /* PhiTextStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 535B11F0124D9E860077298A /* PhiTextStyleViewController.m */; };
@@ -35,25 +38,66 @@
 		535B1213124D9E8E0077298A /* PhiColorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 535B120B124D9E8E0077298A /* PhiColorTableViewCell.m */; };
 		535B1214124D9E8E0077298A /* PhiFontDescriptiorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 535B120D124D9E8E0077298A /* PhiFontDescriptiorTableViewCell.m */; };
 		535B121B124D9EB80077298A /* MyTextEditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 535B121A124D9EB80077298A /* MyTextEditorView.m */; };
-		539925121134A43700CF24E6 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 539925111134A43700CF24E6 /* CoreText.framework */; };
+		535FA3C51335CBD100ABACB5 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 535FA3C21335CBD100ABACB5 /* Icon-72.png */; };
+		535FA3C61335CBD100ABACB5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 535FA3C31335CBD100ABACB5 /* Icon.png */; };
+		535FA3C71335CBD100ABACB5 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 535FA3C41335CBD100ABACB5 /* Icon@2x.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		53E508621335C6DD003A82CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53E5085B1335C6DC003A82CA /* Phitext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 53E508501335BCD5003A82CA;
+			remoteInfo = PhiTestCase;
+		};
+		53E508641335C6DD003A82CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53E5085B1335C6DC003A82CA /* Phitext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 533378371334E27B002014BD;
+			remoteInfo = "Phitext Framework";
+		};
+		53E508661335C6DD003A82CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53E5085B1335C6DC003A82CA /* Phitext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5333784C1334E29B002014BD;
+			remoteInfo = "Phitext Static Library";
+		};
+		53E508681335C6F5003A82CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53E5085B1335C6DC003A82CA /* Phitext.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 533378361334E27B002014BD;
+			remoteInfo = "Phitext Framework";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* PhitextSampleAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhitextSampleAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* PhitextSampleAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhitextSampleAppDelegate.m; sourceTree = "<group>"; };
-		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2899E5210DE3E06400AC0155 /* PhitextSampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhitextSampleViewController.xib; sourceTree = "<group>"; };
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		28D7ACF60DDB3853001CB0EB /* PhitextSampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhitextSampleViewController.h; sourceTree = "<group>"; };
 		28D7ACF70DDB3853001CB0EB /* PhitextSampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhitextSampleViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* PhitextSample_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhitextSample_Prefix.pch; sourceTree = "<group>"; };
-		5312C69511C9D2E1003A0BA1 /* sample.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = sample.txt; sourceTree = "<group>"; };
+		5312C69511C9D2E1003A0BA1 /* sample.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; lineEnding = 0; path = sample.txt; sourceTree = "<group>"; };
+		531A0CF11335F49300D0C8E8 /* Debug-Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Debug-Icon-72.png"; sourceTree = "<group>"; };
+		531A0CF21335F49300D0C8E8 /* Debug-Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Debug-Icon@2x.png"; sourceTree = "<group>"; };
+		531A0CF31335F49300D0C8E8 /* PhitextSampleDebug-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PhitextSampleDebug-Info.plist"; sourceTree = "<group>"; };
+		531A0CFB1335F65100D0C8E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		531A0CFD1335F65C00D0C8E8 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		531A0CFF1335F67A00D0C8E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		532D9D29119D0199008A429C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		532D9D40119D01B3008A429C /* Phitext.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Phitext.framework; path = ../Phitext.framework; sourceTree = SOURCE_ROOT; };
-		534B20F1113B52E600412F0F /* sqlite3.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = sqlite3.txt; sourceTree = "<group>"; };
+		5333782B1334E216002014BD /* Phi-Global-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Phi-Global-Debug.xcconfig"; sourceTree = "<group>"; };
+		5333782C1334E216002014BD /* Phi-Global-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Phi-Global-Release.xcconfig"; sourceTree = "<group>"; };
+		5333782D1334E216002014BD /* Touch-Application-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Touch-Application-Debug.xcconfig"; sourceTree = "<group>"; };
+		5333782E1334E216002014BD /* Touch-Application-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Touch-Application-Release.xcconfig"; sourceTree = "<group>"; };
+		534B20F1113B52E600412F0F /* large.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; lineEnding = 0; path = large.txt; sourceTree = "<group>"; };
 		535B11E9124D9E130077298A /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		535B11ED124D9E860077298A /* PhiTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = PhiTableViewController.h; sourceTree = "<group>"; };
 		535B11EE124D9E860077298A /* PhiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PhiTableViewController.m; sourceTree = "<group>"; };
@@ -82,8 +126,11 @@
 		535B120D124D9E8E0077298A /* PhiFontDescriptiorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = PhiFontDescriptiorTableViewCell.m; sourceTree = "<group>"; };
 		535B1219124D9EB80077298A /* MyTextEditorView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = MyTextEditorView.h; sourceTree = "<group>"; };
 		535B121A124D9EB80077298A /* MyTextEditorView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = MyTextEditorView.m; sourceTree = "<group>"; };
-		539925111134A43700CF24E6 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		535FA3C21335CBD100ABACB5 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		535FA3C31335CBD100ABACB5 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		535FA3C41335CBD100ABACB5 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		53C1AC9F11A19098005D5F7A /* PhitextSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhitextSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53E5085B1335C6DC003A82CA /* Phitext.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Phitext.xcodeproj; path = ../Phitext/Phitext.xcodeproj; sourceTree = "<group>"; };
 		53E77F6611E1AFB9001D520D /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* PhitextSample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PhitextSample-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,10 +140,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				531A0D001335F67A00D0C8E8 /* UIKit.framework in Frameworks */,
+				531A0CFE1335F65C00D0C8E8 /* CoreText.framework in Frameworks */,
+				531A0CFC1335F65100D0C8E8 /* CoreGraphics.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
-				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
-				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
-				539925121134A43700CF24E6 /* CoreText.framework in Frameworks */,
 				532D9D2A119D0199008A429C /* QuartzCore.framework in Frameworks */,
 				532D9D41119D01B3008A429C /* Phitext.framework in Frameworks */,
 			);
@@ -131,6 +178,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				53E5085B1335C6DC003A82CA /* Phitext.xcodeproj */,
+				533378281334E216002014BD /* Configuration */,
 				535B11E9124D9E130077298A /* Settings.bundle */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -153,8 +202,14 @@
 		29B97317FDCFA39411CA2CEA /* Resources-iPad */ = {
 			isa = PBXGroup;
 			children = (
+				531A0CF11335F49300D0C8E8 /* Debug-Icon-72.png */,
+				531A0CF21335F49300D0C8E8 /* Debug-Icon@2x.png */,
+				531A0CF31335F49300D0C8E8 /* PhitextSampleDebug-Info.plist */,
+				535FA3C21335CBD100ABACB5 /* Icon-72.png */,
+				535FA3C31335CBD100ABACB5 /* Icon.png */,
+				535FA3C41335CBD100ABACB5 /* Icon@2x.png */,
 				5312C69511C9D2E1003A0BA1 /* sample.txt */,
-				534B20F1113B52E600412F0F /* sqlite3.txt */,
+				534B20F1113B52E600412F0F /* large.txt */,
 				2899E5210DE3E06400AC0155 /* PhitextSampleViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* PhitextSample-Info.plist */,
@@ -166,14 +221,26 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				531A0CFF1335F67A00D0C8E8 /* UIKit.framework */,
+				531A0CFD1335F65C00D0C8E8 /* CoreText.framework */,
+				531A0CFB1335F65100D0C8E8 /* CoreGraphics.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
-				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
-				539925111134A43700CF24E6 /* CoreText.framework */,
 				532D9D29119D0199008A429C /* QuartzCore.framework */,
 				532D9D40119D01B3008A429C /* Phitext.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		533378281334E216002014BD /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				5333782B1334E216002014BD /* Phi-Global-Debug.xcconfig */,
+				5333782C1334E216002014BD /* Phi-Global-Release.xcconfig */,
+				5333782D1334E216002014BD /* Touch-Application-Debug.xcconfig */,
+				5333782E1334E216002014BD /* Touch-Application-Release.xcconfig */,
+			);
+			name = Configuration;
+			path = ../Configurations;
 			sourceTree = "<group>";
 		};
 		535B11EC124D9E860077298A /* Table Controllers */ = {
@@ -215,6 +282,16 @@
 			name = "Table Cells";
 			sourceTree = "<group>";
 		};
+		53E5085C1335C6DC003A82CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53E508631335C6DD003A82CA /* PhiTestCase.app */,
+				53E508651335C6DD003A82CA /* Phitext.framework */,
+				53E508671335C6DD003A82CA /* libPhitext.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -229,6 +306,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				53E508691335C6F5003A82CA /* PBXTargetDependency */,
 			);
 			name = PhitextSample;
 			productName = PhitextTest;
@@ -249,12 +327,42 @@
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 53E5085C1335C6DC003A82CA /* Products */;
+					ProjectRef = 53E5085B1335C6DC003A82CA /* Phitext.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				1D6058900D05DD3D006BFB54 /* PhitextSample */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		53E508631335C6DD003A82CA /* PhiTestCase.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = PhiTestCase.app;
+			remoteRef = 53E508621335C6DD003A82CA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		53E508651335C6DD003A82CA /* Phitext.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Phitext.framework;
+			remoteRef = 53E508641335C6DD003A82CA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		53E508671335C6DD003A82CA /* libPhitext.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPhitext.a;
+			remoteRef = 53E508661335C6DD003A82CA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1D60588D0D05DD3D006BFB54 /* Resources */ = {
@@ -263,12 +371,17 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* PhitextSampleViewController.xib in Resources */,
-				534B20F2113B52E600412F0F /* sqlite3.txt in Resources */,
+				534B20F2113B52E600412F0F /* large.txt in Resources */,
 				5312C69611C9D2E1003A0BA1 /* sample.txt in Resources */,
 				535B11EA124D9E130077298A /* Settings.bundle in Resources */,
 				535B11FB124D9E860077298A /* PhiTextStyleViewController.xib in Resources */,
 				535B11FE124D9E860077298A /* PhiFontViewController.xib in Resources */,
 				535B1210124D9E8E0077298A /* PhiSliderTableViewCell.xib in Resources */,
+				535FA3C51335CBD100ABACB5 /* Icon-72.png in Resources */,
+				535FA3C61335CBD100ABACB5 /* Icon.png in Resources */,
+				535FA3C71335CBD100ABACB5 /* Icon@2x.png in Resources */,
+				531A0CF41335F49300D0C8E8 /* Debug-Icon-72.png in Resources */,
+				531A0CF51335F49300D0C8E8 /* Debug-Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,71 +412,60 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		53E508691335C6F5003A82CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Phitext Framework";
+			targetProxy = 53E508681335C6F5003A82CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5333782D1334E216002014BD /* Touch-Application-Debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_ENTITLEMENTS = "~/Documents/PROJECTS/Phitext/Apps/PhitextSample/Entitlements.plist";
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/..\"",
-				);
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = PhitextSample_Prefix.pch;
-				INFOPLIST_FILE = "PhitextSample-Info.plist";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INFOPLIST_FILE = "PhitextSampleDebug-Info.plist";
 				PRODUCT_NAME = PhitextSample;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5333782E1334E216002014BD /* Touch-Application-Release.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_ENTITLEMENTS = "~/Documents/PROJECTS/Phitext/Apps/PhitextSample/Entitlements.plist";
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/..\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = PhitextSample_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "'SAMPLE_FILE=@\"large\"'";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = "PhitextSample-Info.plist";
 				PRODUCT_NAME = PhitextSample;
+				PROVISIONING_PROFILE = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5333782B1334E216002014BD /* Phi-Global-Debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
-				PREBINDING = NO;
-				SDKROOT = iphoneos4.1;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5333782C1334E216002014BD /* Phi-Global-Release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PREBINDING = NO;
-				SDKROOT = iphoneos4.1;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
