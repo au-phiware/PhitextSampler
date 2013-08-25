@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53F66F4117C9B60A00335896 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F66F4017C9B60A00335896 /* UIKit.framework */; };
+		53F66F4317C9B60A00335896 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F66F4217C9B60A00335896 /* Foundation.framework */; };
+		53F66F4517C9B60A00335896 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F66F4417C9B60A00335896 /* CoreGraphics.framework */; };
+		53F66F4B17C9B60A00335896 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53F66F4917C9B60A00335896 /* InfoPlist.strings */; };
+		53F66F4D17C9B60A00335896 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F66F4C17C9B60A00335896 /* main.m */; };
+		53F66F5117C9B60A00335896 /* PhitextSamplerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F66F5017C9B60A00335896 /* PhitextSamplerAppDelegate.m */; };
+		53F66F5A17C9B60A00335896 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F66F5817C9B60A00335896 /* MainStoryboard_iPhone.storyboard */; };
+		53F66F5D17C9B60A00335896 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F66F5B17C9B60A00335896 /* MainStoryboard_iPad.storyboard */; };
+		53F66F6017C9B60A00335896 /* PhitextSamplerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F66F5F17C9B60A00335896 /* PhitextSamplerViewController.m */; };
+		53F66F6A17C9B6D300335896 /* libPhiColor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F66F6617C9B6D300335896 /* libPhiColor.a */; };
+		53F66F6B17C9B6D300335896 /* libPhitext.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F66F6717C9B6D300335896 /* libPhitext.a */; };
+		53F66F6C17C9B6D300335896 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F66F6817C9B6D300335896 /* CoreText.framework */; };
+		53F66F6D17C9B6D300335896 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53F66F6917C9B6D300335896 /* QuartzCore.framework */; };
+		53F66F7017C9B78C00335896 /* MyTextEditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F66F6F17C9B78C00335896 /* MyTextEditorView.m */; };
+		53F66F7317C9B80B00335896 /* sample.txt in Resources */ = {isa = PBXBuildFile; fileRef = 53F66F7117C9B80B00335896 /* sample.txt */; };
+		53F66F7417C9B80B00335896 /* large.txt in Resources */ = {isa = PBXBuildFile; fileRef = 53F66F7217C9B80B00335896 /* large.txt */; };
+		53F66F8E17C9BCCA00335896 /* PhiTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F66F7617C9BCBD00335896 /* PhiTableViewController.m */; };
+		53F66F8F17C9BCCA00335896 /* PhiTextStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F66F7817C9BCBE00335896 /* PhiTextStyleViewController.m */; };
+		53F66F9017C9BCCA00335896 /* PhiTextStyleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F66F7917C9BCBF00335896 /* PhiTextStyleViewController.xib */; };
+		53F66F9117C9BCCA00335896 /* PhiChoiceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F66F7B17C9BCBF00335896 /* PhiChoiceTableViewController.m */; };
+		53F66F9217C9BCCA00335896 /* PhiFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F66F7D17C9BCBF00335896 /* PhiFontViewController.m */; };
+		53F66F9317C9BCCA00335896 /* PhiFontViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F66F7E17C9BCBF00335896 /* PhiFontViewController.xib */; };
+		53F66F9417C9BCCA00335896 /* PhiParagraphStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F66F8017C9BCC100335896 /* PhiParagraphStyleViewController.m */; };
+		53F66F9517C9BCCA00335896 /* PhiTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F66F8217C9BCC200335896 /* PhiTableViewCell.m */; };
+		53F66F9617C9BCCA00335896 /* PhiSliderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F66F8417C9BCC400335896 /* PhiSliderTableViewCell.m */; };
+		53F66F9717C9BCCA00335896 /* PhiSliderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F66F8517C9BCC400335896 /* PhiSliderTableViewCell.xib */; };
+		53F66F9817C9BCCA00335896 /* PhiSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F66F8717C9BCC500335896 /* PhiSwitchTableViewCell.m */; };
+		53F66F9917C9BCCA00335896 /* PhiChoiceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F66F8917C9BCC600335896 /* PhiChoiceTableViewCell.m */; };
+		53F66F9A17C9BCCA00335896 /* PhiColorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F66F8B17C9BCC600335896 /* PhiColorTableViewCell.m */; };
+		53F66F9B17C9BCCA00335896 /* PhiFontDescriptiorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F66F8D17C9BCCA00335896 /* PhiFontDescriptiorTableViewCell.m */; };
+		53F66F9D17C9BD0B00335896 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 53F66F9C17C9BD0B00335896 /* Settings.bundle */; };
+		53F66F9F17C9C2AA00335896 /* Phitext.xcodeproj in Resources */ = {isa = PBXBuildFile; fileRef = 53F66F9E17C9C2AA00335896 /* Phitext.xcodeproj */; };
+		53F66FA117C9C2B700335896 /* PhiColor.xcodeproj in Resources */ = {isa = PBXBuildFile; fileRef = 53F66FA017C9C2B700335896 /* PhiColor.xcodeproj */; };
+		53F66FCF17C9E62E00335896 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F66FCC17C9E62E00335896 /* Icon-72.png */; };
+		53F66FD017C9E62E00335896 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F66FCD17C9E62E00335896 /* Icon.png */; };
+		53F66FD117C9E62E00335896 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53F66FCE17C9E62E00335896 /* Icon@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		53F66FC417C9E54D00335896 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53F66FA017C9C2B700335896 /* PhiColor.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 53B65258176D5CFA001024A5;
+			remoteInfo = PhiColor;
+		};
+		53F66FC917C9E54D00335896 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53F66F9E17C9C2AA00335896 /* Phitext.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 53F66E4B17C8EE0600335896;
+			remoteInfo = Phitext;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		53F66F3D17C9B60A00335896 /* PhitextSampler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhitextSampler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53F66F4017C9B60A00335896 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		53F66F4217C9B60A00335896 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		53F66F4417C9B60A00335896 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		53F66F4817C9B60A00335896 /* PhitextSampler-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhitextSampler-Info.plist"; sourceTree = "<group>"; };
+		53F66F4A17C9B60A00335896 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		53F66F4C17C9B60A00335896 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		53F66F4E17C9B60A00335896 /* PhitextSampler-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhitextSampler-Prefix.pch"; sourceTree = "<group>"; };
+		53F66F4F17C9B60A00335896 /* PhitextSamplerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhitextSamplerAppDelegate.h; sourceTree = "<group>"; };
+		53F66F5017C9B60A00335896 /* PhitextSamplerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhitextSamplerAppDelegate.m; sourceTree = "<group>"; };
+		53F66F5917C9B60A00335896 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		53F66F5C17C9B60A00335896 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		53F66F5E17C9B60A00335896 /* PhitextSamplerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhitextSamplerViewController.h; sourceTree = "<group>"; };
+		53F66F5F17C9B60A00335896 /* PhitextSamplerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhitextSamplerViewController.m; sourceTree = "<group>"; };
+		53F66F6617C9B6D300335896 /* libPhiColor.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPhiColor.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		53F66F6717C9B6D300335896 /* libPhitext.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPhitext.a; path = "../../../../../../../Shared/corin/Products/Release-iphoneos/libPhitext.a"; sourceTree = "<group>"; };
+		53F66F6817C9B6D300335896 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		53F66F6917C9B6D300335896 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		53F66F6E17C9B78C00335896 /* MyTextEditorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTextEditorView.h; sourceTree = "<group>"; };
+		53F66F6F17C9B78C00335896 /* MyTextEditorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTextEditorView.m; sourceTree = "<group>"; };
+		53F66F7117C9B80B00335896 /* sample.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sample.txt; sourceTree = "<group>"; };
+		53F66F7217C9B80B00335896 /* large.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = large.txt; sourceTree = "<group>"; };
+		53F66F7517C9BCBD00335896 /* PhiTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhiTableViewController.h; sourceTree = "<group>"; };
+		53F66F7617C9BCBD00335896 /* PhiTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhiTableViewController.m; sourceTree = "<group>"; };
+		53F66F7717C9BCBE00335896 /* PhiTextStyleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhiTextStyleViewController.h; sourceTree = "<group>"; };
+		53F66F7817C9BCBE00335896 /* PhiTextStyleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhiTextStyleViewController.m; sourceTree = "<group>"; };
+		53F66F7917C9BCBF00335896 /* PhiTextStyleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhiTextStyleViewController.xib; sourceTree = "<group>"; };
+		53F66F7A17C9BCBF00335896 /* PhiChoiceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhiChoiceTableViewController.h; sourceTree = "<group>"; };
+		53F66F7B17C9BCBF00335896 /* PhiChoiceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhiChoiceTableViewController.m; sourceTree = "<group>"; };
+		53F66F7C17C9BCBF00335896 /* PhiFontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhiFontViewController.h; sourceTree = "<group>"; };
+		53F66F7D17C9BCBF00335896 /* PhiFontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhiFontViewController.m; sourceTree = "<group>"; };
+		53F66F7E17C9BCBF00335896 /* PhiFontViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhiFontViewController.xib; sourceTree = "<group>"; };
+		53F66F7F17C9BCC000335896 /* PhiParagraphStyleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhiParagraphStyleViewController.h; sourceTree = "<group>"; };
+		53F66F8017C9BCC100335896 /* PhiParagraphStyleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhiParagraphStyleViewController.m; sourceTree = "<group>"; };
+		53F66F8117C9BCC100335896 /* PhiTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhiTableViewCell.h; sourceTree = "<group>"; };
+		53F66F8217C9BCC200335896 /* PhiTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhiTableViewCell.m; sourceTree = "<group>"; };
+		53F66F8317C9BCC200335896 /* PhiSliderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhiSliderTableViewCell.h; sourceTree = "<group>"; };
+		53F66F8417C9BCC400335896 /* PhiSliderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhiSliderTableViewCell.m; sourceTree = "<group>"; };
+		53F66F8517C9BCC400335896 /* PhiSliderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhiSliderTableViewCell.xib; sourceTree = "<group>"; };
+		53F66F8617C9BCC500335896 /* PhiSwitchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhiSwitchTableViewCell.h; sourceTree = "<group>"; };
+		53F66F8717C9BCC500335896 /* PhiSwitchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhiSwitchTableViewCell.m; sourceTree = "<group>"; };
+		53F66F8817C9BCC600335896 /* PhiChoiceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhiChoiceTableViewCell.h; sourceTree = "<group>"; };
+		53F66F8917C9BCC600335896 /* PhiChoiceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhiChoiceTableViewCell.m; sourceTree = "<group>"; };
+		53F66F8A17C9BCC600335896 /* PhiColorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhiColorTableViewCell.h; sourceTree = "<group>"; };
+		53F66F8B17C9BCC600335896 /* PhiColorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhiColorTableViewCell.m; sourceTree = "<group>"; };
+		53F66F8C17C9BCC700335896 /* PhiFontDescriptiorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhiFontDescriptiorTableViewCell.h; sourceTree = "<group>"; };
+		53F66F8D17C9BCCA00335896 /* PhiFontDescriptiorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhiFontDescriptiorTableViewCell.m; sourceTree = "<group>"; };
+		53F66F9C17C9BD0B00335896 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		53F66F9E17C9C2AA00335896 /* Phitext.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Phitext.xcodeproj; path = ../Phitext/Phitext.xcodeproj; sourceTree = "<group>"; };
+		53F66FA017C9C2B700335896 /* PhiColor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PhiColor.xcodeproj; path = ../Phicolor/PhiColor/PhiColor.xcodeproj; sourceTree = "<group>"; };
+		53F66FCC17C9E62E00335896 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		53F66FCD17C9E62E00335896 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		53F66FCE17C9E62E00335896 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53F66F3A17C9B60A00335896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F66F6A17C9B6D300335896 /* libPhiColor.a in Frameworks */,
+				53F66F6B17C9B6D300335896 /* libPhitext.a in Frameworks */,
+				53F66F6C17C9B6D300335896 /* CoreText.framework in Frameworks */,
+				53F66F6D17C9B6D300335896 /* QuartzCore.framework in Frameworks */,
+				53F66F4117C9B60A00335896 /* UIKit.framework in Frameworks */,
+				53F66F4317C9B60A00335896 /* Foundation.framework in Frameworks */,
+				53F66F4517C9B60A00335896 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53F66F3417C9B60A00335896 = {
+			isa = PBXGroup;
+			children = (
+				53F66F9E17C9C2AA00335896 /* Phitext.xcodeproj */,
+				53F66FA017C9C2B700335896 /* PhiColor.xcodeproj */,
+				53F66F4617C9B60A00335896 /* PhitextSampler */,
+				53F66FCC17C9E62E00335896 /* Icon-72.png */,
+				53F66FCD17C9E62E00335896 /* Icon.png */,
+				53F66FCE17C9E62E00335896 /* Icon@2x.png */,
+				53F66F3F17C9B60A00335896 /* Frameworks */,
+				53F66F3E17C9B60A00335896 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		53F66F3E17C9B60A00335896 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53F66F3D17C9B60A00335896 /* PhitextSampler.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53F66F3F17C9B60A00335896 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F66F6617C9B6D300335896 /* libPhiColor.a */,
+				53F66F6717C9B6D300335896 /* libPhitext.a */,
+				53F66F6817C9B6D300335896 /* CoreText.framework */,
+				53F66F6917C9B6D300335896 /* QuartzCore.framework */,
+				53F66F4017C9B60A00335896 /* UIKit.framework */,
+				53F66F4217C9B60A00335896 /* Foundation.framework */,
+				53F66F4417C9B60A00335896 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53F66F4617C9B60A00335896 /* PhitextSampler */ = {
+			isa = PBXGroup;
+			children = (
+				53F66F7517C9BCBD00335896 /* PhiTableViewController.h */,
+				53F66F7617C9BCBD00335896 /* PhiTableViewController.m */,
+				53F66F7717C9BCBE00335896 /* PhiTextStyleViewController.h */,
+				53F66F7817C9BCBE00335896 /* PhiTextStyleViewController.m */,
+				53F66F7917C9BCBF00335896 /* PhiTextStyleViewController.xib */,
+				53F66F7A17C9BCBF00335896 /* PhiChoiceTableViewController.h */,
+				53F66F7B17C9BCBF00335896 /* PhiChoiceTableViewController.m */,
+				53F66F7C17C9BCBF00335896 /* PhiFontViewController.h */,
+				53F66F7D17C9BCBF00335896 /* PhiFontViewController.m */,
+				53F66F7E17C9BCBF00335896 /* PhiFontViewController.xib */,
+				53F66F7F17C9BCC000335896 /* PhiParagraphStyleViewController.h */,
+				53F66F8017C9BCC100335896 /* PhiParagraphStyleViewController.m */,
+				53F66F8117C9BCC100335896 /* PhiTableViewCell.h */,
+				53F66F8217C9BCC200335896 /* PhiTableViewCell.m */,
+				53F66F8317C9BCC200335896 /* PhiSliderTableViewCell.h */,
+				53F66F8417C9BCC400335896 /* PhiSliderTableViewCell.m */,
+				53F66F8517C9BCC400335896 /* PhiSliderTableViewCell.xib */,
+				53F66F8617C9BCC500335896 /* PhiSwitchTableViewCell.h */,
+				53F66F8717C9BCC500335896 /* PhiSwitchTableViewCell.m */,
+				53F66F8817C9BCC600335896 /* PhiChoiceTableViewCell.h */,
+				53F66F8917C9BCC600335896 /* PhiChoiceTableViewCell.m */,
+				53F66F8A17C9BCC600335896 /* PhiColorTableViewCell.h */,
+				53F66F8B17C9BCC600335896 /* PhiColorTableViewCell.m */,
+				53F66F8C17C9BCC700335896 /* PhiFontDescriptiorTableViewCell.h */,
+				53F66F8D17C9BCCA00335896 /* PhiFontDescriptiorTableViewCell.m */,
+				53F66F4F17C9B60A00335896 /* PhitextSamplerAppDelegate.h */,
+				53F66F5017C9B60A00335896 /* PhitextSamplerAppDelegate.m */,
+				53F66F5817C9B60A00335896 /* MainStoryboard_iPhone.storyboard */,
+				53F66F5B17C9B60A00335896 /* MainStoryboard_iPad.storyboard */,
+				53F66F5E17C9B60A00335896 /* PhitextSamplerViewController.h */,
+				53F66F5F17C9B60A00335896 /* PhitextSamplerViewController.m */,
+				53F66F6E17C9B78C00335896 /* MyTextEditorView.h */,
+				53F66F6F17C9B78C00335896 /* MyTextEditorView.m */,
+				53F66F4717C9B60A00335896 /* Supporting Files */,
+			);
+			path = PhitextSampler;
+			sourceTree = "<group>";
+		};
+		53F66F4717C9B60A00335896 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				53F66F9C17C9BD0B00335896 /* Settings.bundle */,
+				53F66F4817C9B60A00335896 /* PhitextSampler-Info.plist */,
+				53F66F4917C9B60A00335896 /* InfoPlist.strings */,
+				53F66F4C17C9B60A00335896 /* main.m */,
+				53F66F4E17C9B60A00335896 /* PhitextSampler-Prefix.pch */,
+				53F66F7117C9B80B00335896 /* sample.txt */,
+				53F66F7217C9B80B00335896 /* large.txt */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		53F66FC117C9E54D00335896 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53F66FC517C9E54D00335896 /* libPhiColor.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53F66FC617C9E54D00335896 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53F66FCA17C9E54D00335896 /* libPhitext.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53F66F3C17C9B60A00335896 /* PhitextSampler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53F66F6317C9B60A00335896 /* Build configuration list for PBXNativeTarget "PhitextSampler" */;
+			buildPhases = (
+				53F66F3917C9B60A00335896 /* Sources */,
+				53F66F3A17C9B60A00335896 /* Frameworks */,
+				53F66F3B17C9B60A00335896 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhitextSampler;
+			productName = PhitextSampler;
+			productReference = 53F66F3D17C9B60A00335896 /* PhitextSampler.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53F66F3517C9B60A00335896 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PhitextSampler;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Phiware;
+			};
+			buildConfigurationList = 53F66F3817C9B60A00335896 /* Build configuration list for PBXProject "PhitextSampler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 53F66F3417C9B60A00335896;
+			productRefGroup = 53F66F3E17C9B60A00335896 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 53F66FC117C9E54D00335896 /* Products */;
+					ProjectRef = 53F66FA017C9C2B700335896 /* PhiColor.xcodeproj */;
+				},
+				{
+					ProductGroup = 53F66FC617C9E54D00335896 /* Products */;
+					ProjectRef = 53F66F9E17C9C2AA00335896 /* Phitext.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				53F66F3C17C9B60A00335896 /* PhitextSampler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		53F66FC517C9E54D00335896 /* libPhiColor.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPhiColor.a;
+			remoteRef = 53F66FC417C9E54D00335896 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		53F66FCA17C9E54D00335896 /* libPhitext.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPhitext.a;
+			remoteRef = 53F66FC917C9E54D00335896 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53F66F3B17C9B60A00335896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F66F4B17C9B60A00335896 /* InfoPlist.strings in Resources */,
+				53F66F5A17C9B60A00335896 /* MainStoryboard_iPhone.storyboard in Resources */,
+				53F66F5D17C9B60A00335896 /* MainStoryboard_iPad.storyboard in Resources */,
+				53F66F7317C9B80B00335896 /* sample.txt in Resources */,
+				53F66F7417C9B80B00335896 /* large.txt in Resources */,
+				53F66F9017C9BCCA00335896 /* PhiTextStyleViewController.xib in Resources */,
+				53F66F9317C9BCCA00335896 /* PhiFontViewController.xib in Resources */,
+				53F66F9717C9BCCA00335896 /* PhiSliderTableViewCell.xib in Resources */,
+				53F66F9D17C9BD0B00335896 /* Settings.bundle in Resources */,
+				53F66F9F17C9C2AA00335896 /* Phitext.xcodeproj in Resources */,
+				53F66FA117C9C2B700335896 /* PhiColor.xcodeproj in Resources */,
+				53F66FCF17C9E62E00335896 /* Icon-72.png in Resources */,
+				53F66FD017C9E62E00335896 /* Icon.png in Resources */,
+				53F66FD117C9E62E00335896 /* Icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53F66F3917C9B60A00335896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F66F4D17C9B60A00335896 /* main.m in Sources */,
+				53F66F5117C9B60A00335896 /* PhitextSamplerAppDelegate.m in Sources */,
+				53F66F6017C9B60A00335896 /* PhitextSamplerViewController.m in Sources */,
+				53F66F7017C9B78C00335896 /* MyTextEditorView.m in Sources */,
+				53F66F8E17C9BCCA00335896 /* PhiTableViewController.m in Sources */,
+				53F66F8F17C9BCCA00335896 /* PhiTextStyleViewController.m in Sources */,
+				53F66F9117C9BCCA00335896 /* PhiChoiceTableViewController.m in Sources */,
+				53F66F9217C9BCCA00335896 /* PhiFontViewController.m in Sources */,
+				53F66F9417C9BCCA00335896 /* PhiParagraphStyleViewController.m in Sources */,
+				53F66F9517C9BCCA00335896 /* PhiTableViewCell.m in Sources */,
+				53F66F9617C9BCCA00335896 /* PhiSliderTableViewCell.m in Sources */,
+				53F66F9817C9BCCA00335896 /* PhiSwitchTableViewCell.m in Sources */,
+				53F66F9917C9BCCA00335896 /* PhiChoiceTableViewCell.m in Sources */,
+				53F66F9A17C9BCCA00335896 /* PhiColorTableViewCell.m in Sources */,
+				53F66F9B17C9BCCA00335896 /* PhiFontDescriptiorTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		53F66F4917C9B60A00335896 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53F66F4A17C9B60A00335896 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		53F66F5817C9B60A00335896 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53F66F5917C9B60A00335896 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		53F66F5B17C9B60A00335896 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53F66F5C17C9B60A00335896 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53F66F6117C9B60A00335896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		53F66F6217C9B60A00335896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53F66F6417C9B60A00335896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhitextSampler/PhitextSampler-Prefix.pch";
+				INFOPLIST_FILE = "PhitextSampler/PhitextSampler-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		53F66F6517C9B60A00335896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhitextSampler/PhitextSampler-Prefix.pch";
+				INFOPLIST_FILE = "PhitextSampler/PhitextSampler-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53F66F3817C9B60A00335896 /* Build configuration list for PBXProject "PhitextSampler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53F66F6117C9B60A00335896 /* Debug */,
+				53F66F6217C9B60A00335896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53F66F6317C9B60A00335896 /* Build configuration list for PBXNativeTarget "PhitextSampler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53F66F6417C9B60A00335896 /* Debug */,
+				53F66F6517C9B60A00335896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53F66F3517C9B60A00335896 /* Project object */;
+}

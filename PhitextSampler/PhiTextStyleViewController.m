@@ -19,7 +19,7 @@
 #import "PhiColorTableViewCell.h"
 #import "PhiParagraphStyleViewController.h"
 #import "PhiFontViewController.h"
-#import <Phitext/PhiColorPatchControl.h>
+#import <Phicolor/PhiColorPatchControl.h>
 
 @implementation PhiTextStyleViewController
 

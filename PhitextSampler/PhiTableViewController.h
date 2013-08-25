@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <Phitext/PhiColorWheelController.h>
-#import <Phitext/PhiColorPatchControl.h>
+#import <Phicolor/PhiColorWheelController.h>
+#import <Phicolor/PhiColorPatchControl.h>
 
 @class PhiTableViewCell;
 

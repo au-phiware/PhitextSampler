@@ -12,7 +12,7 @@
 #define DEBUG_TILE_HINTS 0
 #endif
 
-@interface PhitextSampleViewController : UIViewController <PhiTextViewDelegate> {
+@interface PhitextSamplerViewController : UIViewController <PhiTextViewDelegate> {
 	PhiTextEditorView *editor;
 	CGRect editorFrame;
 #if DEBUG_TILE_HINTS

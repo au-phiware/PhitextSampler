@@ -7,7 +7,7 @@
 //
 
 #import "PhiColorTableViewCell.h"
-#import <Phitext/PhiColorPatchControl.h>
+#import <Phicolor/PhiColorPatchControl.h>
 
 @implementation PhiColorTableViewCell
 

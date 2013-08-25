@@ -1,8 +1,9 @@
 //
-//  PhitextSampleViewController.m
-//  PhitextSample//
-//  Created by Corin Lawson on 4/02/10.
-//  Copyright Corin Lawson 2010. All rights reserved.
+//  PhitextSamplerViewController.m
+//  PhitextSampler
+//
+//  Created by Corin Lawson on 25/08/13.
+//  Copyright (c) 2013 Phiware. All rights reserved.
 //
 
 #define PHI 1.61803398874989484820458683436563812
@@ -11,10 +12,9 @@
 #define SAMPLE_FILE @"sample"
 #endif
 
-#import "PhitextSampleViewController.h"
+#import "PhitextSamplerViewController.h"
 
-@implementation PhitextSampleViewController
-
+@implementation PhitextSamplerViewController
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
 	//NSLog(@"In [PhitextSampleViewController scrollViewWillBeginDragging:]");
@@ -88,24 +88,24 @@
 	[editor addCustomMenuItem:[[[UIMenuItem alloc] initWithTitle:@"Edit Style" action:@selector(showStylePopover)] autorelease] atPage:0];
 	[editor addCustomMenuItem:[[[UIMenuItem alloc] initWithTitle:@"Paste Style" action:@selector(pasteStyle:)] autorelease] atPage:0];
 	
-//	font = CTFontCreateWithName((CFStringRef)@"Courier New", 14.0, NULL);
-//	[editor.textDocument.store addAttribute:kCTFontAttributeName value:font range:NSMakeRange(605, 209)];
-//	CFRelease(font);
+    //	font = CTFontCreateWithName((CFStringRef)@"Courier New", 14.0, NULL);
+    //	[editor.textDocument.store addAttribute:kCTFontAttributeName value:font range:NSMakeRange(605, 209)];
+    //	CFRelease(font);
 	
-//	self.view = [[UIView alloc] initWithFrame:editor.bounds];
-//	[self.view addSubview:editor];
+    //	self.view = [[UIView alloc] initWithFrame:editor.bounds];
+    //	[self.view addSubview:editor];
 	
-//	editor.textDocument.wrap = NO;
-/*
-	CGSize textSize = CGSizeMake(editor.textDocument.wrap?[[UIScreen mainScreen] applicationFrame].size.width:CGFLOAT_MAX, CGFLOAT_MAX);
-	//The following method call is very expensive for large files, avoid using it.
-	//Alternatively you may like to estimate the size of the view from the length
-	// of the text or determine the size at some other time and store/cache it.
-	textSize = [[editor textDocument] suggestTextSize];
-	textSize.height = MAX(textSize.height, 1004); // and make it at least as big as the screen
-	textSize.width = [[UIScreen mainScreen] applicationFrame].size.width; // fix it regardless of suggested size
-    editor.contentSize = textSize;
-*/	
+    //	editor.textDocument.wrap = NO;
+    /*
+     CGSize textSize = CGSizeMake(editor.textDocument.wrap?[[UIScreen mainScreen] applicationFrame].size.width:CGFLOAT_MAX, CGFLOAT_MAX);
+     //The following method call is very expensive for large files, avoid using it.
+     //Alternatively you may like to estimate the size of the view from the length
+     // of the text or determine the size at some other time and store/cache it.
+     textSize = [[editor textDocument] suggestTextSize];
+     textSize.height = MAX(textSize.height, 1004); // and make it at least as big as the screen
+     textSize.width = [[UIScreen mainScreen] applicationFrame].size.width; // fix it regardless of suggested size
+     editor.contentSize = textSize;
+     */
 	//[editor performSelector:@selector(scrollRangeToVisible:) withObject:[PhiTextRange textRangeWithRange:NSMakeRange(1580, 21)] afterDelay:1.0];
 
 	//[NSThread detachNewThreadSelector:@selector(twiddle:) toTarget:self withObject:NULL];
@@ -129,6 +129,7 @@
 	}
 	pinchGesture = nil;
 #endif
+    editor.delegate = nil;
 	[[NSNotificationCenter defaultCenter] removeObserver:self];
 	[editor release];
 	editor = nil;
@@ -248,8 +249,8 @@
 
 - (void)scrollToVisibleRect:(NSValue *)rect {
 	[editor scrollRectToVisible:[rect CGRectValue] animated:YES];
-}	
-	 
+}
+
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return YES;
