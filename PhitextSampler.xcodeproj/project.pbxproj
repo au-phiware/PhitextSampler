@@ -46,13 +46,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		53F66FC417C9E54D00335896 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 53F66FA017C9C2B700335896 /* PhiColor.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 53B65258176D5CFA001024A5;
-			remoteInfo = PhiColor;
-		};
 		53F66FC917C9E54D00335896 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 53F66F9E17C9C2AA00335896 /* Phitext.xcodeproj */;
@@ -112,7 +105,7 @@
 		53F66F8D17C9BCCA00335896 /* PhiFontDescriptiorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhiFontDescriptiorTableViewCell.m; sourceTree = "<group>"; };
 		53F66F9C17C9BD0B00335896 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		53F66F9E17C9C2AA00335896 /* Phitext.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Phitext.xcodeproj; path = ../Phitext/Phitext.xcodeproj; sourceTree = "<group>"; };
-		53F66FA017C9C2B700335896 /* PhiColor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PhiColor.xcodeproj; path = ../Phicolor/PhiColor/PhiColor.xcodeproj; sourceTree = "<group>"; };
+		53F66FA017C9C2B700335896 /* PhiColor.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PhiColor.xcodeproj; path = ../PhiColor/PhiColor.xcodeproj; sourceTree = "<group>"; };
 		53F66FCC17C9E62E00335896 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
 		53F66FCD17C9E62E00335896 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		53F66FCE17C9E62E00335896 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
@@ -227,14 +220,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		53F66FC117C9E54D00335896 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				53F66FC517C9E54D00335896 /* libPhiColor.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		53F66FC617C9E54D00335896 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,10 +270,6 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 53F66FC117C9E54D00335896 /* Products */;
-					ProjectRef = 53F66FA017C9C2B700335896 /* PhiColor.xcodeproj */;
-				},
-				{
 					ProductGroup = 53F66FC617C9E54D00335896 /* Products */;
 					ProjectRef = 53F66F9E17C9C2AA00335896 /* Phitext.xcodeproj */;
 				},
@@ -301,13 +282,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		53F66FC517C9E54D00335896 /* libPhiColor.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libPhiColor.a;
-			remoteRef = 53F66FC417C9E54D00335896 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		53F66FCA17C9E54D00335896 /* libPhitext.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
